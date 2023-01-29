@@ -28,6 +28,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
           child: Column(
@@ -46,11 +47,11 @@ class _MyAppState extends State<MyApp> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  OutlineButton.icon(
+                  ElevatedButton.icon(
                       onPressed: showPreviousCard,
                       icon: Icon(Icons.chevron_left),
                       label: Text('Prev')),
-                  OutlineButton.icon(
+                  ElevatedButton.icon(
                       onPressed: showNextCard,
                       icon: Icon(Icons.chevron_right),
                       label: Text('Next')),
