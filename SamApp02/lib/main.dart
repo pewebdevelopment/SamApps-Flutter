@@ -19,45 +19,48 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (tip != null)
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Text(
-                  tip,
-                  style: TextStyle(fontSize: 30),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (tip != null)
+                  Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Text(
+                      tip,
+                      style: TextStyle(fontSize: 30),
+                    ),
+                  ),
+                Text('Total Amount'),
+                SizedBox(
+                  width: 70,
+                  child: TextField(
+                    controller: controller,
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(hintText: '\$100.00'),
+                    keyboardType:
+                        TextInputType.numberWithOptions(decimal: true),
+                  ),
                 ),
-              ),
-            Text('Total Amount'),
-            SizedBox(
-              width: 70,
-              child: TextField(
-                controller: controller,
-                textAlign: TextAlign.center,
-                decoration: InputDecoration(hintText: '\$100.00'),
-                keyboardType: TextInputType.numberWithOptions(decimal: true),
-              ),
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: ToggleButtons(
+                      children: [Text('10%'), Text('15%'), Text('20%')],
+                      isSelected: _selection,
+                      onPressed: updateSelection),
+                ),
+                ElevatedButton(
+                  onPressed: calculateTip,
+                  child: Text('Calculate Tip'),
+                  // color: Colors.green,
+                  // textColor: Colors.white
+                )
+              ],
             ),
-            Padding(
-              padding: EdgeInsets.all(20),
-              child: ToggleButtons(
-                  children: [Text('10%'), Text('15%'), Text('20%')],
-                  isSelected: _selection,
-                  onPressed: updateSelection),
-            ),
-            FlatButton(
-                onPressed: calculateTip,
-                child: Text('Calculate Tip'),
-                color: Colors.green,
-                textColor: Colors.white)
-          ],
-        ),
-      ),
-    ));
+          ),
+        ));
   }
 
   void updateSelection(int selectedIndex) {
