@@ -1,12 +1,12 @@
 # This is a generated file; do not edit or check into version control.
-amplify_api=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_api-0.6.11\\
-amplify_api_android=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_api_android-0.6.11\\
-amplify_api_ios=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_api_ios-0.6.11\\
-amplify_auth_cognito=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_auth_cognito-0.6.11\\
-amplify_auth_cognito_android=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_auth_cognito_android-0.6.11\\
-amplify_auth_cognito_ios=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_auth_cognito_ios-0.6.11\\
-amplify_core=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_core-0.6.11\\
-amplify_datastore=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_datastore-0.6.11\\
-amplify_flutter=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_flutter-0.6.11\\
-amplify_flutter_android=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_flutter_android-0.6.11\\
-amplify_flutter_ios=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_flutter_ios-0.6.11\\
+amplify_api=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_api-0.6.11\\
+amplify_api_android=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_api_android-0.6.11\\
+amplify_api_ios=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_api_ios-0.6.11\\
+amplify_auth_cognito=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_auth_cognito-0.6.11\\
+amplify_auth_cognito_android=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_auth_cognito_android-0.6.11\\
+amplify_auth_cognito_ios=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_auth_cognito_ios-0.6.11\\
+amplify_core=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_core-0.6.11\\
+amplify_datastore=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_datastore-0.6.11\\
+amplify_flutter=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_flutter-0.6.11\\
+amplify_flutter_android=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_flutter_android-0.6.11\\
+amplify_flutter_ios=D:\\MobileDev\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\amplify_flutter_ios-0.6.11\\
