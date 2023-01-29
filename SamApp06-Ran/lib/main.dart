@@ -22,19 +22,20 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      body: SafeArea(
-        child: CarouselSlider(
-            options: CarouselOptions(autoPlay: true),
-            items: _imagePaths.map((imagePath) {
-              return Builder(builder: (context) {
-                return Container(
-                    width: MediaQuery.of(context).size.width,
-                    margin: EdgeInsets.symmetric(horizontal: 4),
-                    child: Image.asset(imagePath));
-              });
-            }).toList()),
-      ),
-    ));
+          body: SafeArea(
+            child: CarouselSlider(
+                options: CarouselOptions(autoPlay: true),
+                items: _imagePaths.map((imagePath) {
+                  return Builder(builder: (context) {
+                    return Container(
+                        width: MediaQuery.of(context).size.width,
+                        margin: EdgeInsets.symmetric(horizontal: 4),
+                        child: Image.asset(imagePath));
+                  });
+                }).toList()),
+          ),
+        ));
   }
 }
