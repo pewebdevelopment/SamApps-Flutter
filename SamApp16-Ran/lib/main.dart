@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: Theme.of(context)
           .copyWith(primaryColor: Colors.red, accentColor: Colors.redAccent),
       home: MultiBlocProvider(providers: [
