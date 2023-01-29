@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       home: Scaffold(
         body: Center(
@@ -120,7 +121,7 @@ class _MyAppState extends State<MyApp> {
             content: Image.asset(
                 tileState == TileState.CROSS ? 'images/x.png' : 'images/o.png'),
             actions: [
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     _resetGame();
                     Navigator.of(context).pop();
