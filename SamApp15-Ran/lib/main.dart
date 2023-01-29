@@ -18,11 +18,12 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: MultiBlocProvider(providers: [
-      BlocProvider(create: (context) => NavCubit()),
-      BlocProvider(
-        create: (context) => PostsBloc()..add(LoadPostsEvent()),
-      )
-    ], child: AppNavigator()));
+          BlocProvider(create: (context) => NavCubit()),
+          BlocProvider(
+            create: (context) => PostsBloc()..add(LoadPostsEvent()),
+          )
+        ], child: AppNavigator()));
   }
 }
