@@ -23,37 +23,39 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (_response != null)
-              Column(
-                children: [
-                  Image.network(_response.iconUrl),
-                  Text(
-                    '${_response.tempInfo.temperature}°',
-                    style: TextStyle(fontSize: 40),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (_response != null)
+                  Column(
+                    children: [
+                      Image.network(_response.iconUrl),
+                      Text(
+                        '${_response.tempInfo.temperature}°',
+                        style: TextStyle(fontSize: 40),
+                      ),
+                      Text(_response.weatherInfo.description)
+                    ],
                   ),
-                  Text(_response.weatherInfo.description)
-                ],
-              ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 50),
-              child: SizedBox(
-                width: 150,
-                child: TextField(
-                    controller: _cityTextController,
-                    decoration: InputDecoration(labelText: 'City'),
-                    textAlign: TextAlign.center),
-              ),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 50),
+                  child: SizedBox(
+                    width: 150,
+                    child: TextField(
+                        controller: _cityTextController,
+                        decoration: InputDecoration(labelText: 'City'),
+                        textAlign: TextAlign.center),
+                  ),
+                ),
+                ElevatedButton(
+                    onPressed: _search, child: Text('Search Yolo ZZZ'))
+              ],
             ),
-            ElevatedButton(onPressed: _search, child: Text('Search Yolo ZZZ'))
-          ],
-        ),
-      ),
-    ));
+          ),
+        ));
   }
 
   void _search() async {
