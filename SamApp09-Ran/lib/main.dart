@@ -17,32 +17,34 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
             body: Center(
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-          Screenshot(
-            controller: _screenshotController,
-            child: Card(
-                child: Padding(
-              padding: EdgeInsets.all(16),
-              child: Column(
-                children: [
-                  Image.asset('images/codepassionately.png'),
-                  Text(
-                    'Code Passionately',
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              Screenshot(
+                controller: _screenshotController,
+                child: Card(
+                    child: Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Column(
+                    children: [
+                      Image.asset('images/codepassionately.png'),
+                      Text(
+                        'Code Passionately',
+                        style: TextStyle(
+                            fontSize: 30, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
-                ],
+                )),
               ),
-            )),
-          ),
-          TextButton(
-            child: Text('Take Screenshot and Share'),
-            onPressed: _takeScreenshot,
-          )
-        ]))));
+              TextButton(
+                child: Text('Take Screenshot and Share'),
+                onPressed: _takeScreenshot,
+              )
+            ]))));
   }
 
   void _takeScreenshot() async {
