@@ -16,6 +16,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: BlocProvider<PostsCubit>(
             create: (context) => PostsCubit()..getPosts(), child: PostsView()));
   }
